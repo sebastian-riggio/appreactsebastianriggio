@@ -1,13 +1,11 @@
 
-import logomerchi from '../images/logo_merchi3.png';
+import carrito from '../images/carrito.png';
+import CartWidget from './Cartwidget';
 
 
 const NavBar = () => {
     return (
-        <div>
-            <header className="logo_inicio">
- <img src={logomerchi} className="medidas_logo" />
- </header>
+      
  
          <nav >
              <ul className="navbar">
@@ -15,7 +13,9 @@ const NavBar = () => {
          <li ><a href="#">NOSOTROS</a></li>
          <li><a href="#">PRODUCTOS</a></li>
          <li><a href="#">CARRITO</a></li>
+         <CartWidget imgSrc={carrito}/>
          </ul>
+         
         
 
          </nav>
@@ -24,7 +24,7 @@ const NavBar = () => {
 
            
             
-        </div>
+        
     )
 }
 

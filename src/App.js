@@ -1,12 +1,18 @@
-import NavBar from "./components/NavBar"
+import NavBar from "./components/NavBar";
+import Header from "./components/header";
+import ItemListContainer from "./components/ItemListContainer";
 
 
 const App = () => {
     return (
 
 <>
-<NavBar/>
+<Header />
+<ItemListContainer saludo="bienvenidos"/>
+
+
 </>
-    )}
+    )
+}
 
 export default App
