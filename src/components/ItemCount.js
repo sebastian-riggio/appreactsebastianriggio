@@ -5,14 +5,16 @@ const ItemCount = ({stock, initial, onadd}) => {
     const[contador, setContador] = useState(initial)
 
     const aumentarContador = ()=> {
+       
         setContador (contador + 1)
     }
 
         const disminuirContador = ()=> {
+         
             if (contador >[0])
             setContador (contador -1)
         }
-        confirmarContador = ()=>{
+        const confirmarContador = ()=>{
            
     
         }

@@ -14,7 +14,7 @@ const App = () => {
 <div>
 <Header />
 <ItemListContainer saludo="bienvenidos"/>
-<ItemCount stock={6}   initial={1} onadd={onadd} />
+<ItemCount stock={6}   initial={0} onadd={6} />
 
 
 </div>
