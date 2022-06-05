@@ -9,21 +9,26 @@ const ItemCount = ({stock, initial, onadd}) => {
     }
 
         const disminuirContador = ()=> {
-            if (contador >0)
+            if (contador >[0])
             setContador (contador -1)
         }
-        confirmarContador = ()=>{}
+        confirmarContador = ()=>{
+           
+    
+        }
+        return (
+            <div>
+                <p> Tu Pedidos es: {contador}</p>
+                <button onClick={aumentarContador}>Sumar producto</button>
+                <button onClick={disminuirContador}>Sacar producto</button>
+                <button>Hacer Pedido</button>
+                
+            </div>
+        )
     }
 
-    return (
-        <div>
-            <p> Tu Pedidos es: {contador}</p>
-            <button onClick={aumentarContador}>Sumar producto</button>
-            <button onClick={disminuirContador}>Sacar producto</button>
-            <button onClick={confirmarContador}>Hacer Pedido</button>
-            
-        </div>
-    )
+  
+    
 
 
 export default ItemCount

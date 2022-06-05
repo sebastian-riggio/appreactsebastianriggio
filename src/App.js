@@ -6,13 +6,15 @@ import ItemCount from "./components/ItemCount";
 
 
 const App = () => {
-    const onAdd =()=>{}
+    
+        
+    
        return (
 
 <div>
 <Header />
 <ItemListContainer saludo="bienvenidos"/>
-<ItemCount stock={6} onadd={onadd} initial={1}/>
+<ItemCount stock={6}   initial={1} onadd={onadd} />
 
 
 </div>
