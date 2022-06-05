@@ -3,7 +3,7 @@ import carrito from '../images/carrito.png';
 
 
 
-function CartWidget ({imgSrc}){
+function CartWidget (){
 return (
     <div> 
 
