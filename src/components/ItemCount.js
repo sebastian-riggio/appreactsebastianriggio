@@ -1,26 +1,26 @@
 import React from 'react'
-import { cloneElement } from 'react'
+
 import { useState } from 'react'
 
 const ItemCount = ({ stock, initial, onAdd }) => {
-  const [contador, setContador] = useState(initial);
-  console.log(stock);
+  const [contador, setContador] = useState(initial)
 
   const aumentarContador = () => {
-
-     setContador(contador + 1)
-    
+    if (contador < stock) {
+      setContador(contador + 1)
+      console.log(contador)
+    }
   }
 
   const disminuirContador = () => {
-    
-
-    setContador(contador - 1)
+    if (contador > [0]) setContador(contador - 1)
+    console.log(contador)
   }
   const confirmarContador = () => {}
   return (
     <div>
-      <p> Tu Pedidos es : {contador}</p>
+      <p> stock: {stock}</p>
+      <p> tu pedidos es: {contador}</p>
       <button onClick={aumentarContador}>Sumar producto</button>
       <button onClick={disminuirContador}>Sacar producto</button>
       <button onClick={confirmarContador}> Hacer Pedido</button>
