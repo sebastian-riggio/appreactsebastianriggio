@@ -3,10 +3,10 @@ import ItemCount from './ItemCount';
 
 function Item({id, name, image, stock}) {
   return (
-    <div className={style.container} >
+    <div >
         <h1>{name}</h1>
         <img src={image} alt={id} />
-        <ItemCount stock={stock}/>
+        <ItemCount stock={stock} />
     </div>
   )
 }

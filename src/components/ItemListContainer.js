@@ -1,10 +1,10 @@
 
 import './ItemlistContainer.css';
 import ItemList from './ItemList';
-import ItemCount from './ItemCount'
-import React, {useEffect, useState} from react;
-import productos from '../../utils/productos';
-import customFetch from '../../utils/customFetch';
+import ItemCount from './ItemCount';
+import { useState, useEffect } from 'react';
+import productos from '../utils/productos';
+import customFetch from '../utils/customFetch';
 
 
 
