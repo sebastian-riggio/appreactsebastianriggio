@@ -1,5 +1,6 @@
 import Header from './components/header'
 import ItemListContainer from './components/ItemListContainer'
+import ItemDetailContainer from './components/ItemDetailContainer'
 
 
 const App = () => {
@@ -7,6 +8,7 @@ const App = () => {
     <div>
       <Header />
       <ItemListContainer  />
+      <ItemDetailContainer />
     
     </div>
   )
