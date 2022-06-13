@@ -1,4 +1,4 @@
-import React from 'react'
+
 /* import customFetch from '../utils/customFetch' */
 import { traerProducto } from '../utils/productos'
 import ItemDetail from './ItemDetail'
