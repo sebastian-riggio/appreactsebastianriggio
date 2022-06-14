@@ -1,13 +1,13 @@
 import React from 'react'
-import ItemCount from './ItemCount'
 
 
-const Item = ({ item }) => {
+
+const Item = ({ products }) => {
   return (
     <div>
-      <img width="200px" src={item.img} alt="producto" />
-      <h2>{item.name}</h2>
-      <p>${item.price}</p>
+      <img width="200px" src={products.img} alt="producto" />
+      <h2>{products.name}</h2>
+      <p>${products.price}</p>
     </div>
   )
 }
