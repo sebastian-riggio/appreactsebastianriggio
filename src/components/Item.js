@@ -1,20 +1,19 @@
 import React from 'react'
-
-
+import ItemCount from './ItemCount'
 
 const Item = ({ products }) => {
   return (
     <div>
-      <img width="200px" src={products.img} alt="producto" />
+      <img width="200px" src={products.image} alt="producto" />
       <h2>{products.name}</h2>
-      <p>${products.price}</p>
+      <p>${products.precio}</p>
+      <h4>Stock: {products.stock}</h4>
+      <ItemCount stock={products.stock} initial={1} />
     </div>
   )
 }
 
 export default Item
-
-
 
 /* function Item({id, name, image, stock}) {
   return (

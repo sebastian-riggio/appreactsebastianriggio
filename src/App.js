@@ -2,14 +2,12 @@ import Header from './components/header'
 import ItemListContainer from './components/ItemListContainer'
 import ItemDetailContainer from './components/ItemDetailContainer'
 
-
 const App = () => {
   return (
     <div>
       <Header />
-      <ItemListContainer  />
+      <ItemListContainer />
       <ItemDetailContainer />
-    
     </div>
   )
 }
