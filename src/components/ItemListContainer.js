@@ -29,7 +29,6 @@ const ItemListContainer = (props) => {
     <div>
       <ItemList products={products} />
 
-      <ItemCount stock={30} initial={0} onAdd={6} />
     </div>
   )
 }
